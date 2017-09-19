@@ -11,8 +11,23 @@ body {
 }
 
 #btn-menu {
+	font-size: 20px;
 	text-decoration: none;
 	display: none;
+	background: #0747A6;
+	color: white;
+	border-radius: 0 2px 2px 0;
+}
+
+#btn-menu-left {
+	font-size: 20px;
+	margin-left: 60px;
+	display: none;
+	position: absolute;
+	top: 0;
+	background: #0747A6;
+	color: white;
+	border-radius: 0 2px 2px 0; 
 }
 
 .activo {
@@ -26,14 +41,16 @@ body {
 	width: 60px;
 	left: 0;
 	top: 0;
+	/*
 	box-shadow: 3px 0 10px black;
 	transitio: left .5s ease;
-	z-index: 1000;
+	z-index: 1000;*/
 }
 
 .main-container {
 	height: 100%;
 	margin-left: 60px; 
+	padding: 10px;
 }
 
 .menu {
@@ -85,4 +102,12 @@ body {
 	#btn-menu:checked ~ .menu-container {
 		display: block;
 	}*/
+}
+
+@media (max-height: 210px) {
+	.inferior {
+		position:relative;
+    	bottom: 0;
+    	width: 100%;
+	}	
 }
